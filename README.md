@@ -22,9 +22,9 @@
 - Task: Write code to determine whether a number is an Armstrong number.
 - Tests Passed: 9/9
 
-### Hamming (Work in Progress)
+### Hamming 
 - Task: Calculate the Hamming distance between two DNA strands.
-- Tests Completed: 8/16
+- Tests Completed: 16/16
 
 
 ## Bash Script Handson Exercises

@@ -1,0 +1,9 @@
+argument $1
+function reverse string
+or output by starting loop from end 
+empty string should give empty response like "" ""
+case sensitive
+punction should be part of reverse too
+space should be followed as it comes udring string reverse
+globbiing should be avoidedv
+
