@@ -1,4 +1,3 @@
-### Main
 ### Summary of Today's Activities
 ## Exercism
 
