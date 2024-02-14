@@ -6,7 +6,7 @@
 - Calculate the Hamming difference between two DNA strands.
 
 ### Bob
-- Mentoring in progress
+- Completed
 - Bob is a lackadaisical teenager. In conversation, his responses are very limited.
 
 ### Reverse String
@@ -14,9 +14,13 @@
 - Reverse a given string.
 
 ### Leap
-- Mentoring in progress
+- Completed
 - Determine whether a given year is a leap year.
 
 ### Matching Brackets
 - Completed
 - Make sure the brackets and braces all match.
+
+### Scrabbling Score
+- Completed
+- Given a word, compute the scrabble score for that world.
