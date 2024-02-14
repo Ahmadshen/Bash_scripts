@@ -23,4 +23,15 @@
 
 ### Scrabbling Score
 - Completed
-- Given a word, compute the scrabble score for that world.
+- Given a word, compute the Scrabble score for that word.
+
+### Grains
+- Completed
+- Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.
+- Write code that shows:
+
+- how many grains were on a given square, and
+- the total number of grains on the chessboard
+
+
+
