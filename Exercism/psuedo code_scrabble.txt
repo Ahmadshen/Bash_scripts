@@ -15,4 +15,4 @@ calculate points on the formula
 case insensitive
 ignore spacing
 only count alphabets from user, if theres number in input 
-ignore it 
+ignore it \
