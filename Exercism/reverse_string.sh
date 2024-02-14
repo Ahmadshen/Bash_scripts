@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-
-#!/usr/bin/env bash
-
 # Function to reverse a string
 reverse_string() {
     local input="$1"
