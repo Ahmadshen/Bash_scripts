@@ -1,6 +1,6 @@
 ### Main
-#### Task: Summary of Today's Activities
-- Exercism
+### Summary of Today's Activities
+## Exercism
 
 ### Hamming
 - Completed
