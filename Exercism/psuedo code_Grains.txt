@@ -1,6 +1,0 @@
-argument $1
-input number , echo double the value
-code which sums all 64 values after doubling on each square
-input number != 0 and - integar value and should not exceed 64 value  then echo "Error: invalid input"
-So, if any argument except 1-64 number and total echo "Error: invalid input"
-total = sum of all 64 grains after doubling like every number doubles on each chess  square
