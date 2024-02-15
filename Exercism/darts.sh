@@ -12,21 +12,7 @@ if ! [[ $1 =~ ^-?[0-9]+(\.[0-9]+)?$ ]] || ! [[ $2 =~ ^-?[0-9]+(\.[0-9]+)?$ ]] ; 
     exit 1
 fi
 
-x=$1
-y=$2
-
 # Calculate the distance from the origin
-distance=$(echo "scale=2; sqrt($x^2 + $y^2)" | bc)
-
-# Determine the score based on distance
-if (( $(echo "$distance <= 1" | bc -l) )); then
-    score=10
-elif (( $(echo "$distance <= 5" | bc -l) )); then
-    score=5
-elif (( $(echo "$distance <= 10" | bc -l) )); then
-    score=1
-else
-    score=0
-fi
-
-echo "$score"
+bc <<< "scale=4 
+        x=$1 ; y=$2 ; d=sqrt(x^2 + y^2 )
+        if (d <= 1) 10 else if (d <= 5) 5 else if (d <= 10) 1 else 0"
