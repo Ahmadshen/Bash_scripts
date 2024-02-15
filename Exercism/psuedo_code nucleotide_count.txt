@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+'A': 3, 'C': 1, 'G': 1, 'T': 2
+if $1 != [A, C, G, T]
+
+echo "INVALID -> error"
+empty strand should output  $'A: 0\nC: 0\nG: 0\nT: 0'
+
+Single strand is accepted and 
+if a single strand repeated, sum its values assigned in code
+
+if a strand with invalid nucleotides
+
+echo  "Invalid nucleotide in strand"
