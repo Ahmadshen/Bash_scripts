@@ -1,9 +1,0 @@
-1. Define an array of verses containing the lines of the nursery rhyme.
-2. Check if the number of arguments is correct.
-   - If not, print the usage message and exit.
-3. Extract the start and end verse numbers from the arguments.
-4. Check if the verse numbers are valid.
-   - If not, print an error message and exit.
-5. Iterate from the start verse to the end verse.
-   - Print the corresponding verse from the array.
-6. Exit.
