@@ -1,0 +1,10 @@
+2. If the number of arguments is less than 2 or more than 4, print "invalid arguments" and exit
+3. For each of the first two arguments, check if it is numeric. If not, print "invalid arguments" and exit
+4. If there are 4 arguments, check if the fourth argument is numeric. If not, print "invalid arguments" and exit
+5. If there are 3 arguments, print "invalid arguments" and exit
+6. Calculate the total minutes by multiplying the first argument by 60 and adding the second argument
+7. If there are 4 arguments, apply the delta provided by adding or subtracting the fourth argument from the total minutes
+8. Normalize the total minutes to the range [0, 1440)
+9. Calculate the hours by dividing the total minutes by 60
+10. Calculate the minutes by taking the remainder of the total minutes divided by 60
+11. Print the time in the format HH:MM
