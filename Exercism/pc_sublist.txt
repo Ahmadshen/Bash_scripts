@@ -1,0 +1,10 @@
+Two lists A == B  echo "equal"
+#A is equal to list B if both lists have the same values in the same order. 
+A contains elements of list B (A Super list) echo "superlist"
+#List A is a superlist of B if A contains a sub-sequence of values equal to B
+A is contained by list B ( focus A, A sublist)
+#List A is a sublist of B if B contains a sub-sequence of values equal to A
+
+echo "sublist"
+
+A!=B echo "unequal"
