@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+
+4 arguments
+
+first argument, any name quilateral, isoceles, scalene then calculation , first this should check if pass then
+quilateral triangle 3 sides same length
+isosceles 2 same
+scalene triangle different sides
+
+check this 
+For a shape to be a triangle at all, all sides have to be of length > 0
+
+ the sum of the lengths of any two sides must be greater than or equal to the length of the third side. echo true or false based on calculation 
+
+a + b ≥ c
+b + c ≥ a
+a + c ≥ b
