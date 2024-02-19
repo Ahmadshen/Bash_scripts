@@ -1,0 +1,26 @@
+Define function roll_dice:
+    Generate a random number between 3 and 18
+    Return the number
+
+Define function modifier with parameter score:
+    Subtract 10 from score and store the result in abilityScoreAdjusted
+    If abilityScoreAdjusted is negative and odd:
+        Decrement abilityScoreAdjusted by 1
+    Return abilityScoreAdjusted divided by 2
+
+Define function generate:
+    For each ability in the list [strength, dexterity, constitution, intelligence, wisdom, charisma]:
+        Call roll_dice and store the result in roll
+        Print the ability and roll
+        If the ability is constitution:
+            Store roll in constitution
+    Calculate hitpoints as 10 plus the result of calling modifier with constitution
+    Print "hitpoints" and hitpoints
+
+Define function main with parameters args:
+    If the first element of args is "modifier":
+        Call modifier with the second element of args
+    Else if the first element of args is "generate":
+        Call generate
+
+Call main with command-line arguments
