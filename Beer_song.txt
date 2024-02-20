@@ -1,0 +1,14 @@
+The script first checks if the number of arguments (`$#`) is less than 1 or greater than 2. If so, it prints an error message and exits with a status of 1.
+
+It then sets the `start` variable to the first argument (`$1`). If the second argument (`$2`) is not provided (i.e., it's empty), it sets the `end` variable to the same value as `start`. Otherwise, it sets `end` to the second argument.
+
+The script checks if `start` is less than `end`. If so, it prints an error message and exits with a status of 1.
+
+The script then enters a loop, counting down from `start` to `end` (inclusive). For each number `i` in this sequence:
+
+   - If `i` is greater than 2, it prints the standard verse of the song with `i` bottles.
+   - If `i` is exactly 2, it prints the verse with 2 bottles, but refers to "1 bottle" in the second line.
+   - If `i` is exactly 1, it prints the verse with 1 bottle, and refers to "no more bottles" in the second line.
+   - If `i` is less than 1 (i.e., it's 0), it prints the final verse of the song, referring to "no more bottles" and "99 bottles" in the second line.
+
+The `printf` command is used to format the output, with `%d` placeholders replaced by the current value of `i` (or `i-1` where appropriate).
