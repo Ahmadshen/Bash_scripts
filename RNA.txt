@@ -1,0 +1,27 @@
+RNA interference
+The four nucleotides found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T).
+
+The four nucleotides found in RNA are adenine (A), cytosine (C), guanine (G) and uracil (U).
+
+Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
+
+G -> C
+C -> G
+T -> A
+A -> U
+
+
+declare -a
+DNA= 
+RNA=
+
+empty RNA 
+loop iterate every word, give the corresponding equivalent
+If any other word except IN INPUT GCTA then echo "Invalid nucleotide detected."
+Input should be given output for this chart
+G -> C
+C -> G
+T -> A
+A -> U
+
+
