@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+colors -A [
+Black: 0
+
+Brown: 1
+
+Red: 2
+
+Orange: 3
+
+Yellow: 4
+
+Green: 5
+
+Blue: 6
+
+Violet: 7
+
+Grey: 8
+
+White: 9]
+
+only first two input values will be as from list and for tthe last color if its black, kits ignored, if its some another color in third parameter then the zeros are added in output of color equavlent to the value of color in third parameter and output should print number + ohms e.g 280 ohms
+
+Here's the updated pseudocode based on the provided code:
+
+
+ Calculate the resistor value by using the color codes for the first two colors and the multiplier for the third color. The formula is `(${colors[$color1]} * 10 + ${colors[$color2]}) * (10 ** ${colors[$color3]})`.
+
+If the resistor value is greater than or equal to 1,000,000,000, divide the value by 1,000,000,000 and append " gigaohms" to the result.
+
+Else, if the resistor value is greater than or equal to 1,000,000, divide the value by 1,000,000 and append " megaohms" to the result.
+
+Else, if the resistor value is greater than or equal to 1,000, divide the value by 1,000 and append " kiloohms" to the result.
+
+Else, append " ohms" to the resistor value.
+
+9. Print the final resistor value with the appropriate unit.
+
+10. Ignore any parameters after the third one.
+
+Note: The script uses the metric prefix for values above 1,000 ohms. The prefixes "kilo", "mega", and "giga" are used for values in the thousands, millions, and billions, respectively.
