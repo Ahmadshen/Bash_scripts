@@ -1,0 +1,19 @@
+Start
+
+If the number of arguments is 0 then
+    Exit the program
+End If
+
+Store all arguments in an array. Use special variable at @.
+
+Need to use for loop. 
+
+Print
+
+End
+
+
+So, in summary, this script takes a list of words as input arguments, 
+stores them in an array, and then generates a proverb by iterating over the array 
+and printing a line for each pair of elements. 
+The final line of the proverb is printed after the loop.
