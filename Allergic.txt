@@ -7,6 +7,7 @@ two arguments
 list
 allergic to ingredients name
 max 128, after that start from 1 again for input
+echo True and False
 
 
 All the allergens Tom is allergic to.

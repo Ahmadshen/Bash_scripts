@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Check if the input contains any characters other than 'A', 'C', 'G', or 'T'
-#If statement that checks if the first argument to the script (`$1`) contains any characters other than 'A', 'C', 'G', or 'T'. The `=~` operator is used for regex matching in bash, and `[^ACGT]` is a regex pattern that matches any character not in the set {'A', 'C', 'G', 'T'}.
+#gitThe `=~` operator is used for regex matching in bash, and `[^ACGT]` is a regex pattern that matches any character not in the set {'A', 'C', 'G', 'T'}.
 if [[ $1 =~ [^ACGT] ]]; then
   echo "Invalid nucleotide detected."
   exit 1

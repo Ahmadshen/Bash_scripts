@@ -13,23 +13,19 @@ allergens=(
   ["cats"]=128
 )
 
-# Function to determine if a person is allergic to a given item
-is_allergic_to() {
-  local score=$1
-  local item=$2
-  (( (score & ${allergens[$item]}) > 0 )) && echo "Yes" || echo "No"
-}
+# Check if the command is "allergic_to"
+if [[ $2 == "allergic_to" ]]; then
+  (( ($1 & ${allergens[$3]}) > 0 )) && echo "true" || echo "false"
+fi
 
-# Function to list all allergies
-list_allergies() {
-  local score=$1
-  for item in "${!allergens[@]}"; do
-    (( (score & ${allergens[$item]}) > 0 )) && echo $item
+# Check if the command is "list"
+if [[ $2 == "list" ]]; then
+  output=""
+  for item in "eggs" "peanuts" "shellfish" "strawberries" "tomatoes" "chocolate" "pollen" "cats"; do
+    (( ($1 & ${allergens[$item]}) > 0 )) && output+="$item "
   done
-}
-
-# Test the functions
-score=34
-item="peanuts"
-echo "Is allergic to $item? $(is_allergic_to $score $item)"
-echo "All allergies: $(list_allergies $score)"
+  # Remove trailing space if output is not empty
+  #Removing the trailing space**: Initially, the script had an issue where it was outputting an extra space at the end of the list of allergies. To fix this, we added a line to remove the last character from the `output` variable, which is the trailing space. However, this caused another issue where the script would fail if the `output` variable was empty (i.e., if the person had no allergies). To fix this, we added a condition to only remove the last character if the `output` variable is not empty
+  [[ -n $output ]] && output=${output::-1}
+  echo $output
+fi
