@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+List and loop for iteration
+Function to determine, how to calculate
+Power raise functions_ input 
+two arguments
+list
+allergic to ingredients name
+max 128, after that start from 1 again for input
+
+
+All the allergens Tom is allergic to.
+eggs (1)
+peanuts (2)
+shellfish (4)
+strawberries (8)
+tomatoes (16)
+chocolate (32)
+pollen (64)
+cats (128)
