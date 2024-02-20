@@ -1,0 +1,10 @@
+1. Read the input argument passed to the script.
+2. Convert the input argument to lowercase using the `${1,,}` syntax.
+3. Replace newline characters (`\n`) with spaces using the `sed` command.
+4. Extract words from the modified input using the `grep` command with the pattern `\<[a-z0-9']{0,}\>`. This pattern matches words consisting of lowercase letters, numbers, and apostrophes.
+5. Sort the extracted words alphabetically using the `sort` command.
+6. Count the unique occurrences of each word using the `uniq -c` command. The `-c` option adds a count of each line.
+7. Format the output by using the `awk` command to print the word and its count in the format `word: count`.
+
+In summary, this script takes an input argument, converts it to lowercase, replaces newline characters with spaces, extracts words, sorts them alphabetically, counts the unique occurrences of each word, and finally formats the output by printing each word with its count.
+
