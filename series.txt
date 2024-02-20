@@ -1,0 +1,17 @@
+slicing 
+Maybe to use iteration or not
+
+these series are only required to occupy adjacent positions in the input; the digits need not be numerically consecutive.
+
+first $1 string number
+second $2 is how many adjacent digits we want
+so, it will slice strings, removing 1 digit from start
+so, if digits asked are more than the string number
+echo "slice length cannot be greater than series length"
+so, if digit asked is 0 for the string number then 
+echo "slice length cannot be zero"
+so, if digit asked is negative integar for the string number then 
+echo "slice length cannot be negative"
+
+so, if string number is empty and digit mentioned
+9second paremeter then echo "series cannot be empty"
