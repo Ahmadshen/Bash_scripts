@@ -1,29 +1,22 @@
 #!/usr/bin/env bash
 
 # Define the actions
-actions=("wink" "double blink" "close your eyes" "jump")
+events=("wink" "double blink" "close your eyes" "jump")
 
-# Convert the input number to binary
-binary=$(echo "obase=2;$1" | bc)
+# Check if the 5th bit is set
+((reverse = $1 >> 4 & 1))
 
-# Initialize an empty array to hold the handshake actions
-handshake=()
+# Initialize an empty string to hold the actions
+result=""
 
-# Loop over the digits of the binary number
-for (( i=0; i<${#binary}; i++ )); do
-  # Get the i-th digit from the right
-  digit=${binary: -1 - $i:1}
-
-  # If the digit is 1 and it's not the leftmost digit, add the corresponding action to the handshake
-  if (( digit == 1 && i < 4 )); then
-    handshake+=(${actions[$i]})
-  fi
-
-  # If the digit is 1 and it's the leftmost digit, reverse the order of the handshake
-  if (( digit == 1 && i == 4 )); then
-    handshake=( "${handshake[@]}" )
+# Check each bit of the number
+for i in "${!events[@]}"; do
+  # If the bit is set, add the corresponding action to the string
+  if (($1 >> i & 1)); then
+    # If the 5th bit is set, add the action to the beginning of the string
+    ((reverse)) && result="${events[i]},$result" || result+="${events[i]},"
   fi
 done
 
-# Print the handshake
-echo ${handshake[@]}
+# Print the actions, removing the trailing comma
+echo "${result%,}"
