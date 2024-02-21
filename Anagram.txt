@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+bash code to find angram in two arguments strings
+
+"words are not anagrams of themselves even if letter case is completely different"
+
+code to find anagram - Stock Overflow
+
+But output should be the words which are detected in anagram.
