@@ -1,0 +1,8 @@
+
+Using Two parameters
+
+As array declare
+12 lines store of lyrics store
+
+Two inputs $1 First line , second parameter on first input bases, give text up to number mentioned in second parameter.
+
