@@ -1,8 +1,3 @@
-#!/usr/bin/env bash
-
-# The first argument is the level
-level=$1
-
 # If no factors are provided, print 0 and exit
 if [ $# -eq 0 ]; then
     echo 0
@@ -12,17 +7,17 @@ fi
 # For each base value
 for base in "$@"; do
     # If base is 0, ignore it
-    if [ $base -eq 0 ]; then
+    if [ "$base" -eq 0 ]; then
         continue
     fi
 
     # If base is greater than level, continue with the next base
-    if [ $base -gt $level ]; then
+    if [ "$base" -gt "$level" ]; then
         continue
     fi
 
     # Find multiples of the base value that are less than the level
-    for (( i=$base; i<$level; i+=$base )); do
+    for (( i=base; i<level; i+=base )); do
         multiples[$i]=$i
     done
 done
