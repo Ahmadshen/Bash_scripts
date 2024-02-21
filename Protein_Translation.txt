@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+one parameter only $1
+Values based on firsst three chracters corresponding to the array and output according to value 
+if empty input, output empty
+if input doest match from array, output empty
+whenever these comes, code stops output UAA, UAG, UGA and only before one remains
+chracters should be in form of 3, if any like 4 then echo invalid codon 
+
+
+declare Array and Key value corresponding
+
+
+Codon	             Protein
+AUG	                 Methionine
+UUU, UUC	         Phenylalanine
+UUA, UUG	         Leucine
+UCU, UCC,UCA, UCG	 Serine
+UAU, UAC	         Tyrosine
+UGU, UGC	         Cysteine
+UGG	                 Tryptophan
+UAA, UAG, UGA	     STOP
