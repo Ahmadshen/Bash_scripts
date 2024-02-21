@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Check if parameter is provided
+# Check if parameter is provided = NOT NECCEASRY HERE TO CHECK AS PER TEST CASES
 if [ -z "$1" ]
 then
-    echo $0
-    exit 1
+    echo -n ""
+    exit 0
 fi
 
 # Declare an associative array for codon to protein mapping
@@ -13,6 +13,7 @@ codonMap=(["AUG"]="Methionine" ["UUU"]="Phenylalanine" ["UUC"]="Phenylalanine" [
 
 # Split the input into chunks of 3 characters
 input=$1
+output=""
 for ((i=0; i<${#input}; i+=3)); do
     codon=${input:$i:3}
 
@@ -24,9 +25,12 @@ for ((i=0; i<${#input}; i+=3)); do
 
     # Check if codon is a stop codon
     if [[ ${codonMap[$codon]} == "STOP" ]]; then
-        exit 0
+        break
     fi
 
-    # Output the protein
-    echo ${codonMap[$codon]}
+    # Append the protein to the output
+    output+="${codonMap[$codon]} "
 done
+
+# Output the proteins
+echo -n "${output% }"
