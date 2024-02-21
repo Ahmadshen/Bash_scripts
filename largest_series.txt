@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+Input $1
+span $2
+series loop
+product , sum of multiples
+need to calculate the product of each series
+ largest series from product is answer after comparing with the product of each series.
+
+reports zero if only digits are zero for $1
+span must be smaller than the string length
+rejects empty string and nonzero span
+rejects invalid character in digits , input should only be digits
+reject negative span
