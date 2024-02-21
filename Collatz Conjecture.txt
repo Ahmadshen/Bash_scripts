@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+Input should be greater than 0 and only positive integars and If input is 0 , echo  or if input is negative integar  echo "Error: Only positive numbers are allowed"
+
+Find code calculation:-
+
+The Collatz Conjecture or 3x+1 problem can be summarized as follows:
+
+Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is odd, multiply n by 3 and add 1 to get 3n + 1. Repeat the process indefinitely. The conjecture states that no matter which number you start with, you will always reach 1 eventually.
+
+Task:-Given a number n, return the number of steps required to reach 1.
+
+Example=
+Starting with n = 12, the steps would be as follows:
+
+12
+6
+3
+10
+5
+16
+8
+4
+2
+1
