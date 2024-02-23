@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+Scan the potential egg-laying spots and mark down a 1 for an existing egg or a 0 for an empty spot.
+
+Convert the number from binary to decimal.
+
+Inmput number $1, 
+change it to binary 
+from binary result, sum only single digits of 1, how many times they come and ignore 0  ( we can choose loop here? or if else? whats better?)
+
+Outpul will be display from sum of 1 digits
+
