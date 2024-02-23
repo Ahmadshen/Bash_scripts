@@ -3,13 +3,11 @@
 rot_cipher() {
     local str="$1"
     local rot="$2"
-    if ((rot == 0 || rot == 26)); then
-        echo "$str"
-    else
-        echo "$str" | tr \
-            'A-Za-z' \
-            "$(printf '%.*s' "$((26-rot%26))" 'NOPQRSTUVWXYZABCDEFGHIJKLM')$(printf '%.*s' "$((26-rot%26))" 'nopqrstuvwxyzabcdefghijklm')"
-    fi
+    local lower=$(echo {a..z} | tr -d ' ')
+    local upper=$(echo {A..Z} | tr -d ' ')
+    local rotated_lower=$(echo "$lower$lower" | cut -c$((rot%26+1))-$((rot%26+26)))
+    local rotated_upper=$(echo "$upper$upper" | cut -c$((rot%26+1))-$((rot%26+26)))
+    echo "$str" | tr 'a-zA-Z' "$rotated_lower$rotated_upper"
 }
 
 # Test the function
