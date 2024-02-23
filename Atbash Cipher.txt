@@ -1,0 +1,22 @@
+
+The first letter is replaced with the last letter, the second with the second-last, and so on.
+
+An Atbash cipher for the Latin alphabet would be as follows:
+
+Plain:  abcdefghijklmnopqrstuvwxyz
+Cipher: zyxwvutsrqponmlkjihgfedcba
+
+Input = $1
+Change to lowercase and remove,. commas and spaces if any.
+
+then creating Atbash cipher function 
+
+An Atbash cipher for the Latin alphabet would be as follows:
+
+Plain:  abcdefghijklmnopqrstuvwxyz
+Cipher: zyxwvutsrqponmlkjihgfedcba
+
+Output print 5 letters + space and so on if input comes with encode otherwise with docode, output will show all answer without any spaces.
+
+decode will docode cipher text to plain.
+
