@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+The general notation for rotational ciphers is ROT + <key>.
+Need Rotational Cipher for a key of 0 to 26.
+Two parameters 
+First string 
+(string can contain Capital, space, punctuations anything)
+(Punctuation, space and aopstrophy should not be rotated , only characters)
+Second number 
+Use caesar cipher function for 
+Output 
+
+Examples
+ROT5 omg gives trl
+ROT0 c gives c
+ROT26 Cool gives Cool
+ROT13 The quick brown fox jumps over the lazy dog. gives Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
+ROT13 Gur dhvpx oebja sbk whzcf bire gur ynml qbt. gives The quick brown fox jumps over the lazy dog.
+A ROT13 on the Latin alphabet would be as follows:
+
+Plain:  abcdefghijklmnopqrstuvwxyz
+Cipher: nopqrstuvwxyzabcdefghijklm
