@@ -1,0 +1,16 @@
+
+Here's how it works:
+
+1. It first checks if the minimum value is less than or equal to the maximum value. If not, it prints an error message and exits.
+
+2. It defines a function `is_palindrome` that checks if a number is a palindrome by comparing its digits from the ends towards the center.
+
+3. It initializes variables for the product, candidate palindrome, and factors.
+
+4. Depending on the operation (smallest or largest), it loops through the range in ascending or descending order, calculates the product, and checks if it's a palindrome.
+
+5. If the product is a palindrome and it's a better candidate (smaller for smallest operation, larger for largest operation), it updates the candidate and the factors.
+
+6. If the product is not a better candidate, it breaks the loop early.
+
+7. At the end, if a candidate palindrome was found, it prints the candidate and the factors.
