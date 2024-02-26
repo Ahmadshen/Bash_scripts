@@ -1,0 +1,10 @@
+single argument
+function to find nth prime number when given input
+(maybe use loop?)
+if 0 or negative integaar, echo "invalid input"
+
+so, if -z -eq 0 or negative integar 
+echo "invalid output"
+else 
+function to find nth prime number
+echo "$nth number"
